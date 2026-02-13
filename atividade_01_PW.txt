@@ -1,0 +1,11 @@
+Descreva as motivações para o desenvolvimento de aplicações baseadas em internet.
+Além da segurança, integração e escalabilidade, temos a disponibilidade, onde ter acesso a qualquer momento e lugar é primordial nos dias atuais;
+A portabilidade, que possibilita acessar a aplicação em diferentes dispositivos (iphone, android, pc);
+e a configuração da aplicação que tende a ser mínima e simples.
+
+Quais as funções de um servidor de aplicação?
+Armazenas os conteúdos da aplicação (página e arquivos), manter as configurações da aplicação além de cuidar da segurança e conexões.
+
+Quais as diferenças das camadas de frontend e backend ?
+o backend é onde você mantém toda a parte da aplicação voltada a banco de dados, processamento de requisições.
+Já no frontend você tem a interface gráfica que o usuário utiliza para se comunicar com o backend, por exemplo por meio de botões, vídeos e links.
