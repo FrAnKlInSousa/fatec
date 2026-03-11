@@ -1,0 +1,19 @@
+<h1>Informações</h1>
+<p>
+  {{ mensagem }}
+</p>
+
+nome: <input type="text" [(ngModel)]="nome" placeholder="Digite o nome completo" /><br />
+email: <input type="text" [(ngModel)]="email" /><br />
+telefone: <input type="text" [(ngModel)]="telefone" /><br />
+assunto: <br />
+<label for="assunto-select">Escolha um assunto</label><br />
+<select name="assuntos" id="assunto-select" [(ngModel)]="assunto">
+  <option value="produtos">Problema com produtos</option>
+  <option value="pedidos">Problema com pedidos</option>
+  <option value="cadastro">Problema com cadastro</option>
+  <option value="duvidas">Dúvidas e sugestões</option></select
+><br />
+Mensagem: <input type="text" [(ngModel)]="texto" /><br />
+Cópia: <input type="checkbox" [(ngModel)]="copia" /><br />
+<button (click)="enviar()">Enviar</button>

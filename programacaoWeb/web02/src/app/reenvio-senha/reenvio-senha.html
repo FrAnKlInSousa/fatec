@@ -1,0 +1,10 @@
+<div>
+  <div>Nova senha: <input type="password" [(ngModel)]="novaSenha" /></div>
+  <div>Repita a senha: <input type="password" [(ngModel)]="copiaSenha" /></div>
+  <div>
+    <button (click)="salvar()">Salvar</button>
+  </div>
+  <div>
+    {{ mensagem }}
+  </div>
+</div>
