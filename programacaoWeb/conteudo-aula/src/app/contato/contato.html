@@ -1,1 +1,21 @@
-<p>contato works!</p>
+<h1>Fale conosco</h1>
+<div>
+  Ola seja bem vindo a nossa loja virtual, qualquer duvida estamos a disposição, entre contato pelo
+  formulario abaixo:
+</div>
+<br />
+<h2>
+  {{ alerta }}
+</h2>
+<br />
+Nome: <input type="text" placeholder="Digite o seu nome" /><br />
+Email: <input type="email" placeholder="Inoforme o seu email" /><br />
+Assunto:
+<select name="Assunto" id="assunto">
+  <option value="produtos">Dúvidas com produtos</option>
+  <option value="pedidos">Dúvidas com pedidos</option>
+  <option value="geral">Problemas gerais</option>
+  <option value="sugestoes">Críticas e sugestões</option></select
+><br />
+Mensagem: <textarea cols="50" rows="5" id="mensagem"></textarea><br />
+<button (click)="enviar()">Enviar</button>
