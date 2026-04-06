@@ -7,9 +7,12 @@ Telefone: <input type="text" placeholder="00 00000-0000" [(ngModel)]="telefone" 
 Assunto:
 <select name="assunto" id="assunto" [(ngModel)]="assunto">
   <option value="produtos">Problemas com produtos</option>
-  <option value="pedido">Problemas com pedido</option>
+  <option value="pedido">Problemas com pedidos</option>
   <option value="cadastro">Problemas com cadastro</option>
-  <option value="sugestao">Críticas e sugestões</option></select
-><br />
-Mensagem: <textarea name="texto" id="texto" [(ngModel)]="texto"></textarea> <br />
+  <option value="sugestao">Críticas e sugestões</option>
+</select>
+<br />
+Mensagem: <textarea name="texto" rows="5" cols="80" id="texto" [(ngModel)]="texto"></textarea>
+<br />
+<input type="checkbox" [(ngModel)]="copia" /> Deseja receber uma cópia? <br />
 <button (click)="enviar()">Enviar</button>
