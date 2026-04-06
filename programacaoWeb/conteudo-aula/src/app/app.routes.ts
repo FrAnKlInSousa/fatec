@@ -6,6 +6,7 @@ import { Login } from './login/login';
 import { Cesta } from './cesta/cesta';
 import { Pesquisa } from './pesquisa/pesquisa';
 import { ReenviaSenha } from './reenvia-senha/reenvia-senha';
+import { Detalhe } from './detalhe/detalhe';
 
 export const routes: Routes = [
   { path: '', component: Vitrine },
@@ -16,4 +17,5 @@ export const routes: Routes = [
   { path: 'cesta', component: Cesta },
   { path: 'pesquisa', component: Pesquisa },
   { path: 'reenvia-senha', component: ReenviaSenha },
+  { path: 'detalhe', component: Detalhe },
 ];
