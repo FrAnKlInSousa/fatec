@@ -13,8 +13,4 @@ export class Cadastro {
   nome: string = '';
   email: string = '';
   telefone: string = '';
-
-  cadastrar(){
-    this.nome = 
-  }
 }
