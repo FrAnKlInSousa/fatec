@@ -12,7 +12,7 @@ import { tick } from '@angular/core/testing';
 })
 export class Contato {
   public mensagem: string = '';
-  public titulo: string = '';
+  public assunto: string = '';
   public nome: string = '';
   public telefone: string = '';
   public email: string = '';
@@ -24,7 +24,7 @@ export class Contato {
   public enviar() {
     this.mensagem = 'Email enviado com sucesso.';
 
-    let data = `Título: ${this.titulo},
+    let data = `Título: ${this.assunto},
     Nome: ${this.nome}, Email: ${this.email},
     Copia: ${this.copia},
     Telefone: ${this.telefone},
