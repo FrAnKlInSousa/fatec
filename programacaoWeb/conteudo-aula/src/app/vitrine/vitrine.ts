@@ -115,15 +115,21 @@ export class Vitrine {
     let lista: ItemCesta[] = [];
     let item: ItemCesta = new ItemCesta();
 
-    item.produto = obj;
-    item.quantidade = 1;
-    item.valor = obj.valor;
-
     if (json != null) {
       lista = JSON.parse(json);
     }
 
-    lista.push(item);
+    let itemExistente = lista.find((item) => item.produto.codigo === obj.codigo);
+
+    if (itemExistente) {
+      itemExistente.quantidade += 1;
+    } else {
+      item.produto = obj;
+      item.quantidade = 1;
+      item.valor = obj.valor;
+      lista.push(item);
+    }
+
     localStorage.setItem('cesta', JSON.stringify(lista));
     location.href = 'cesta';
   }
