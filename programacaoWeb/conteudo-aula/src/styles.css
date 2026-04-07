@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+body {
+    background-color: darkgray;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+footer {
+    background-color: black;
+    color: white;
+    height: 20vh;
+}
+input, select, textarea {
+    background-color: yellow;
+    border: solid 1px black;
+    color: black;
+    margin: 4px;
+    padding:2px;
+}
+button {
+    width: 100px;
+    background-color: cadetblue;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+img {
+    border-radius: 10px;
+    border: solid 1px black;
+}
+.centralizar{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: darkslategray;
+    padding: 10px;
+}*/
