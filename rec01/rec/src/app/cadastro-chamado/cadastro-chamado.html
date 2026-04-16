@@ -1,14 +1,36 @@
-<h1>Novo chamado</h1>
-<div class="container">
-  <button routerLink="/">Voltar para lista</button>
-  Código: <input type="text" [(ngModel)]="codigo" /> <br />
-  Assunto: <input type="text" [(ngModel)]="assunto" /> <br />
-  Prioridade:
-  <select name="" id="" [(ngModel)]="prioridade">
-    <option value="">opcao 1</option>
-    <option value="">opcao 2</option>
-    <option value="">opcao 3</option></select
-  ><br />
-  Detalhes: <textarea name="" id="" [(ngModel)]="detalhes"></textarea>
-  <button (click)="gravarChamado()">Gravar</button>
+<div class="container mt-4">
+  <h1 class="mb-4">Novo chamado</h1>
+
+  <div class="card p-4 shadow-sm">
+    <div class="mb-3">
+      <label class="form-label">Código</label>
+      <input type="text" class="form-control" [(ngModel)]="codigo" />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Assunto</label>
+      <input type="text" class="form-control" [(ngModel)]="assunto" />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Prioridade</label>
+      <select class="form-select" [(ngModel)]="prioridade">
+        <option value="">Selecione</option>
+        <option value="1">Opção 1</option>
+        <option value="2">Opção 2</option>
+        <option value="3">Opção 3</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Detalhes</label>
+      <textarea class="form-control" rows="3" [(ngModel)]="detalhes"></textarea>
+    </div>
+
+    <div class="d-flex justify-content-end gap-2">
+      <button class="btn btn-secondary" routerLink="/">Voltar para lista</button>
+
+      <button class="btn btn-success" (click)="gravarChamado()">Gravar</button>
+    </div>
+  </div>
 </div>

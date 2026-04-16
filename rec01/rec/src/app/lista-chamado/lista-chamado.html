@@ -1,19 +1,35 @@
-<h1>Lista de chamados</h1>
-<button routerLink="/cadastro">Novo chamado</button><br />
-<table>
-  <thead>
-    <tr>
-      <th>Código</th>
-      <th>Assunto</th>
-      <th>Prioridade</th>
-    </tr>
-  </thead>
+<div class="container mt-4">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="mb-0">Lista de chamados</h1>
 
-  <tbody>
-    <tr *ngFor="let chamado of lista">
-      <td>{{ chamado.codigo }}</td>
-      <td>{{ chamado.assunto }}</td>
-      <td>{{ chamado.prioridade }}</td>
-    </tr>
-  </tbody>
-</table>
+    <button class="btn btn-primary" routerLink="/cadastro">Novo chamado</button>
+  </div>
+
+  <div class="card p-3 shadow-sm">
+    <table class="table table-striped table-hover mb-0">
+      <thead class="table-dark">
+        <tr>
+          <th>Código</th>
+          <th>Assunto</th>
+          <th>Prioridade</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let chamado of lista">
+          <td>{{ chamado.codigo }}</td>
+          <td>{{ chamado.assunto }}</td>
+          <td>
+            <span class="badge bg-secondary">
+              {{ chamado.prioridade }}
+            </span>
+          </td>
+        </tr>
+
+        <tr *ngIf="lista.length === 0">
+          <td colspan="3" class="text-center text-muted">Nenhum chamado cadastrado</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
