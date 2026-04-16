@@ -1,1 +1,19 @@
-<p>lista-chamado works!</p>
+<h1>Lista de chamados</h1>
+<button>Novo chamado</button><br />
+<table>
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Assunto</th>
+      <th>Prioridade</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let chamado of lista">
+      <td>{{ chamado.codigo }}</td>
+      <td>{{ chamado.assunto }}</td>
+      <td>{{ chamado.prioridade }}</td>
+    </tr>
+  </tbody>
+</table>
