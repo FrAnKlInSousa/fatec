@@ -1,1 +1,14 @@
-<p>cadastro-chamado works!</p>
+<h1>Novo chamado</h1>
+<div class="container">
+  <button>Voltar para lista</button>
+  Código: <input type="text" [(ngModel)]="codigo" /> <br />
+  Assunto: <input type="text" [(ngModel)]="assunto" /> <br />
+  Prioridade:
+  <select name="" id="" [(ngModel)]="prioridade">
+    <option value="">opcao 1</option>
+    <option value="">opcao 2</option>
+    <option value="">opcao 3</option></select
+  ><br />
+  Detalhes: <textarea name="" id="" [(ngModel)]="detalhes"></textarea>
+  <button (click)="gravarChamado()">Gravar</button>
+</div>
