@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Chamado } from '../models/chamado';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-cadastro-chamado',
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RouterModule],
   templateUrl: './cadastro-chamado.html',
   styleUrl: './cadastro-chamado.css',
 })
