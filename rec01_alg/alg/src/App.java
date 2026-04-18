@@ -64,7 +64,7 @@ public class App {
 
                 System.out.println(menor);
                 System.out.println(meio);
-                System.out.println(menor);
+                System.out.println(maior);
 
             }
         }
