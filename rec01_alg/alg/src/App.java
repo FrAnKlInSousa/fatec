@@ -4,7 +4,11 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner entrada = new Scanner(System.in);
 
-        int a, b, c, menor, maior, meio;
+        int a, b, c;
+        String menor, maior, meio;
+        menor = "";
+        maior = "";
+        meio = "";
 
         a = entrada.nextInt();
         b = entrada.nextInt();
@@ -28,35 +32,40 @@ public class App {
             }else{
                 if(a > b){
                     if (a > c){
-                        menor = a;
+                        menor = "A-Menor";
                         if (b > c){
-                            meio = b;
-                            menor = c;
+                            meio = "B-Meio";
+                            menor = "C-Menor";
                         }else{
-                            meio = c;
-                            menor = b;
+                            meio = "C-Meio";
+                            menor = "B-Menor";
                         }
                     }else{
-                        maior = c;
-                        meio = a;
-                        menor = b;
+                        maior = "C-Maior";
+                        meio = "A-Meio";
+                        menor = "B-Menor";
                     }
                 }else{
                     if (b > c){
-                        maior = b;
+                        maior = "B-Maior";
                         if(a > c){
-                            meio = a;
-                            menor = c;
+                            meio = "A-Meio";
+                            menor = "C-Menor";
                         }else{
-                            meio = c;
-                            menor = a;
+                            meio = "C-Meio";
+                            menor = "A-Menor";
                         }
                     }else{
-                        maior = c;
-                        meio = b;
-                        menor = a;
+                        maior = "C-Maior";
+                        meio = "B-Meio";
+                        menor = "A-Menor";
                     }
                 }
+
+                System.out.println(menor);
+                System.out.println(meio);
+                System.out.println(menor);
+
             }
         }
     }
