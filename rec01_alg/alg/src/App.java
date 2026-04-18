@@ -27,12 +27,34 @@ public class App {
                 }
             }else{
                 if(a > b){
-
+                    if (a > c){
+                        menor = a;
+                        if (b > c){
+                            meio = b;
+                            menor = c;
+                        }else{
+                            meio = c;
+                            menor = b;
+                        }
+                    }else{
+                        maior = c;
+                        meio = a;
+                        menor = b;
+                    }
                 }else{
                     if (b > c){
                         maior = b;
+                        if(a > c){
+                            meio = a;
+                            menor = c;
+                        }else{
+                            meio = c;
+                            menor = a;
+                        }
                     }else{
                         maior = c;
+                        meio = b;
+                        menor = a;
                     }
                 }
             }
