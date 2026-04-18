@@ -18,6 +18,24 @@ public class App {
             }else{
                 System.out.println("A e B são iguais e menores que C.");
             }
+        }else{
+            if(a == c){
+                if (a > b){
+                    System.out.println("A e C são iguais e maiores que B.");
+                }else{
+                    System.out.println("A e C são iguais e menores que B.");
+                }
+            }else{
+                if(a > b){
+
+                }else{
+                    if (b > c){
+                        maior = b;
+                    }else{
+                        maior = c;
+                    }
+                }
+            }
         }
     }
 }
