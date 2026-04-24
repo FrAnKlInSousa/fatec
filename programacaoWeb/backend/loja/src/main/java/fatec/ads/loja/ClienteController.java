@@ -46,5 +46,8 @@ public Cliente edita(@PathVariable String email, @RequestBody Cliente cliente) {
     return cliente;
 }
 
-
+@DeleteMapping("/cliente/{email}")
+public String deleta(@PathVariable String email){
+    return repo.deletar(email);
+}
 }

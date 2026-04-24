@@ -44,4 +44,14 @@ public class Repo {
         return clientes;
     }
 
+    public String deletar(String email){
+        Cliente cliente = this.buscaEmail(email);
+        if (cliente != null){
+            clientes.remove(cliente);
+            return "Usuário deletado com sucesso.";
+        }else{
+            return "Usuário não encontrado.";
+        }
+    }
+
 }
