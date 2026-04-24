@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Repo {
+public class ClienteRepo {
 
     private List<Cliente> clientes = new ArrayList<>();
 
