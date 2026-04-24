@@ -22,7 +22,7 @@ public class ClienteController {
 Cliente cliente;
 
 @Autowired
-Repo repo;
+ClienteRepo repo;
 
 @PostMapping("/cliente")
 public Cliente cria(@RequestBody Cliente cliente) {
