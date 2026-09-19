@@ -1,0 +1,8 @@
+.card {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card-header {
+  background-color: #f8f9fa;
+}
